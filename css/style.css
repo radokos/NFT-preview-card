@@ -1,0 +1,291 @@
+/**
+ * GENERAL
+ */
+ html {
+	box-sizing: border-box;
+	height: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clearfix */
+.group:before,
+.group:after { content: " "; display: table; }
+.group:after { clear: both; }
+
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Trebuchet MS', Verdana, serif;
+	background-color: #0d1a2d;
+	
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root{
+	--farba:#5d7495;
+}	
+
+/* main */
+
+main {
+	margin: 0 auto;
+    width: 30%;
+	background-color: #15273f;
+	border-radius: 0.8rem;
+    margin-bottom:0.5em;
+}
+
+section{
+	padding: 1.3rem 1.3rem 0.9rem ;
+}
+
+
+.equil{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+
+section img:first-of-type{
+	
+	border-radius: 0.4em;
+	position: relative;
+	z-index: 2;
+
+}
+
+.second h1{
+	color: #f8ffff;
+	font-size: 1.2em;
+	margin: 1.5rem 0rem 1rem;
+}
+
+.second p{
+	color:var(--farba);
+	text-align: left !important;
+}
+
+section div:last-of-type{
+	display: flex;
+	justify-content: space-between;
+	color: var(--farba);
+}
+
+.third{
+	border-bottom: 1px solid #273951;
+}
+
+.third svg {
+	width:1.1rem; 
+	height:1.1rem;
+}
+.third p:first-of-type {
+	color: #00FFF8;
+}
+.third svg:last-of-type {
+	height: 0.9rem;
+
+}
+
+/*footer*/
+
+footer{
+	padding: 0 1.3rem;
+	display: flex;
+	padding-bottom: 1.3rem;
+}
+
+footer img{
+	width: 1.9rem;
+	height: 1.9rem;
+	border-radius: 50%;
+	border: 0.09rem solid #ffffffa6;
+	margin-right: 1rem;
+}
+
+footer p{
+	margin-top: 0px;
+	line-height: 1.84rem;
+	font-size: 1rem;
+	color: var(--farba);
+}
+footer span{
+	color: var(--farba);
+	color: white;
+}
+
+
+body p:last-child{
+	text-align: center;
+    margin-bottom: 0.5em;
+}
+
+
+/*active hover*/
+
+.activepic{
+   background:#a7a7edad url('../images/icon-view.svg') center no-repeat;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 10;
+   opacity:0.01;
+   border-radius: 0.4em;
+}
+
+.activepic:hover,
+.activepic:active{
+	opacity:0.8;
+	cursor:pointer;
+}
+
+.second h1:hover,
+.second h1:active,
+footer span:hover,
+footer span:active {
+	color:#00FFF8 ;
+	cursor: pointer;
+}
+
+/*media queries*/
+
+@media ( max-width:1132px){
+
+ main{
+		width: 31%;
+	}
+}
+
+@media ( max-width:1095px){
+
+	main{
+		width: 32.7%;
+	}
+}
+
+@media ( max-width:1040px){
+
+	main{
+		width: 33%;
+	}
+}
+
+@media ( max-width:1029px){
+
+	main{
+		width: 36%;
+	}
+}
+
+@media ( max-width:943px){
+
+	main{
+		width: 39%;
+	}
+}
+
+@media ( max-width:870px){
+
+	main{
+		width: 42%;
+	}
+}
+
+@media ( max-width:808px){
+
+	main{
+		width: 46%;
+	}
+}
+
+@media ( max-width:738px){
+
+	main{
+		width: 50%;
+	}
+}
+
+
+@media ( max-width:678px){
+
+	main{
+		width: 58%;
+	}
+}
+
+
+@media ( max-width:584px){
+
+	main{
+		width: 65%;
+	}
+}
+
+@media ( max-width:430px){
+
+	main{
+		width: 79%;
+	}
+}
+
+@media ( max-width:390px){
+
+	main{
+		width: 83%;
+		height:440px;
+		margin-bottom:0rem;
+		margin-top:0.5rem;
+		
+       }
+    section{
+		padding: 1.3rem 0.5rem 0.7rem;
+	}
+
+	section div:first-of-type{
+		width:90%;
+		margin:0 auto;
+           }
+  
+	.activepic{
+		width:100% !important;
+	}	   
+	
+	.second h1,
+	.second p {
+		margin:0.7rem 0rem 0.5rem;
+		padding-left:1.3rem;
+	}
+
+	.third p {
+		padding-left:1.3rem;
+		margin:0.4rem 0rem 0.3rem;
+		font-size:95%;
+	}
+	.third p:last-child {
+		padding-left:0rem;
+		padding-right: 0.2rem;
+	}
+
+	footer p{
+		line-height:1rem;
+	}
+   
+	footer{
+		padding-bottom:0rem;
+	}
+	body div:nth-child(2){
+		font-size:80%;
+	}
+}
+
